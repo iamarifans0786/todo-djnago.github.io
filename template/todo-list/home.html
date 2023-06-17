@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/css/todo-home-style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-list">
+            <div class="heading">
+                <h2>
+                    My ToDo List
+                </h2>
+            </div>
+            <form action="#" method="post">
+                <div class="form-header">
+                    <input type="text" name="title" id="title" placeholder="Titles..">
+                    <input type="submit" id="add-button" value="ADD">
+                </div>
+                <div class="checkbox-container">
+                    <div class="check-box">
+                        <ol>
+                            {% for inner in data %}
+
+                            {% include 'todo-list/base.html' with inner=inner %}
+
+                            {% endfor %}
+                            
+                        </ol>
+
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>

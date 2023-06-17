@@ -1,0 +1,36 @@
+
+{% if inner.check_status %}
+
+<li>
+    <div id="chek">
+        <div class="check-title">
+            <input type="checkbox" class="chklist" checked>
+            <label>
+                {{ inner.title }}
+            </label>
+        </div>
+        <div class="btn-cross">
+            <a href="#"><button class="btn">X</button></a>
+        </div>
+    </div>
+</li>
+{% else %}
+    
+<li>
+    <div id="chek">
+        <div class="check-title">
+            <input type="checkbox" class="chklist">
+            <label>
+                {{ inner.title }}
+            </label>
+        </div>
+        <div class="btn-cross">
+            <a href="#"><button class="btn">X</button></a>
+        </div>
+    </div>
+</li>
+
+{% endif %}
+    
+
+

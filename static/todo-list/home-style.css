@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(91, 91, 199);
+}
+
+/* main Containe */
+
+.container {
+    /* border: 1px solid red; */
+    width: 60%;
+    margin: 0px auto;
+}
+
+/* Form Container */
+
+.todo-list {
+    width: 90%;
+    border: 1px solid green;
+    margin: 0px auto;
+    height: 550px;
+    margin-top: 40px;
+    background-color: beige;
+}
+
+/* heading */
+
+.heading {
+    color: rgb(228, 225, 223);
+    text-align: center;
+    background-color: red;
+    padding: 20px 0px;
+
+}
+
+ /* Todo-list Header part  */
+
+.form-header {
+    height: 100px;
+    text-align: center;
+    background-color: black;
+}
+
+ /* Title Field */
+#title {
+    align-items: center;
+    align-self: center;
+    margin-top: 50px;
+    padding: 10px;
+    width: 70%;
+    border: none;
+}
+
+/* Add Button */
+#add-button {
+    padding: 10px;
+    width: 15%;
+    border: none;
+    background-color: rgb(165, 155, 155);
+}
+
+/* .check-box {} */
+
+
+/* Check-feild */
+
+.checkbox-container {
+    width: 85%;
+    border: 1px solid green;
+    border-radius: 10px;
+    margin: 10px auto;
+
+}
+
+/* Check-Container */
+
+#chek{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin: 10px 15px;
+}
+.chklist{
+margin: 0px 10px;
+}
+.btn{
+  background-color: transparent;
+  border-style: none;
+  font-weight: 900;
+  font-size:15px;
+}
